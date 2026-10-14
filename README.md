@@ -19,12 +19,28 @@ elle lit à voix haute la sélection ou la page entière, avec la voix et la vit
 
 ## Installation (mode développeur)
 
-1. Ouvrez `edge://extensions` (ou `chrome://extensions`).
-2. Activez **Mode développeur** (en bas à gauche dans Edge, en haut à droite dans Chrome).
-3. Cliquez sur **Charger l'extension décompressée** et choisissez le dossier `SpeechExtension`.
-4. Épinglez l'extension : icône puzzle 🧩 de la barre d'outils → œil / punaise à côté de *Speech*.
+1. Téléchargez `SpeechExtension_vX.Y.Z.zip` dans les [Releases](https://github.com/AtHerGloaguen/SpeechExtensionChromium/releases)
+   et décompressez-le dans un dossier qui restera en place (par exemple `Documents\SpeechExtension`) :
+   le navigateur charge l'extension depuis ce dossier à chaque démarrage.
+2. Ouvrez `edge://extensions` (ou `chrome://extensions`).
+3. Activez **Mode développeur** (en bas à gauche dans Edge, en haut à droite dans Chrome).
+4. Cliquez sur **Charger l'extension décompressée** et choisissez le dossier décompressé (celui qui contient `manifest.json`).
+5. Épinglez l'extension : icône puzzle 🧩 de la barre d'outils → œil / punaise à côté de *Speech*.
 
-Pour mettre à jour après une modification des fichiers : bouton **Recharger** ↻ de l'extension dans `edge://extensions`.
+Pour mettre à jour : remplacez le contenu du dossier par celui de la nouvelle archive,
+puis cliquez sur le bouton **Recharger** ↻ de l'extension dans `edge://extensions`. Les paramètres sont conservés.
+
+## Publier une version
+
+La CI GitHub (`.github/workflows/CI_build.yml`) vérifie les fichiers à chaque push.
+Pour publier une Release avec l'archive `.zip`, changez `version` dans `manifest.json`, commitez, puis créez le tag correspondant :
+
+```
+git tag -a v1.0.1 -m "v1.0.1: ..."
+git push origin v1.0.1
+```
+
+Le tag doit être `v` + la version du manifeste, sinon la CI refuse de publier.
 
 ## Utilisation
 
