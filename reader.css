@@ -1,0 +1,8 @@
+/* Text being read: light grey, readable on light and dark pages */
+::highlight(speech-sentence) {
+	background-color: rgba(128, 128, 128, 0.16);
+}
+
+::highlight(speech-word) {
+	background-color: rgba(128, 128, 128, 0.45);
+}

@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Speech</title>
+	<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+	<section class="controls">
+		<div class="row">
+			<button id="speak-selection" data-text="speakSelection"></button>
+			<button id="speak-page" data-text="speakPage"></button>
+		</div>
+		<div class="row player">
+			<button id="previous" class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5h2v14H6zM20 5v14L9.5 12z"/></svg></button>
+			<button id="pause-resume" class="icon main"></button>
+			<button id="next" class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 5h2v14h-2zM4 5v14l10.5-7z"/></svg></button>
+			<button id="stop" class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6h12v12H6z"/></svg></button>
+		</div>
+		<div id="status" class="status"></div>
+	</section>
+
+	<section class="settings">
+		<label for="voice" data-text="voice"></label>
+		<div class="row">
+			<select id="voice"></select>
+			<button id="test" data-text="test" class="small"></button>
+		</div>
+
+		<label class="check">
+			<input type="checkbox" id="allow-online">
+			<span data-text="allowOnline"></span>
+		</label>
+		<p id="online-warning" class="warning" data-text="onlineWarning" hidden></p>
+
+		<label for="speed"><span data-text="speed"></span> <output id="speed-value"></output></label>
+		<input type="range" id="speed" min="-10" max="10" step="1">
+		<div class="scale">
+			<span data-text="slowerLabel"></span>
+			<button id="normal" data-text="normal" class="link"></button>
+			<span data-text="fasterLabel"></span>
+		</div>
+
+		<label class="check">
+			<input type="checkbox" id="follow-text">
+			<span data-text="followText"></span>
+		</label>
+
+		<label class="check">
+			<input type="checkbox" id="show-bar">
+			<span data-text="showBar"></span>
+		</label>
+
+		<label class="check">
+			<input type="checkbox" id="context-menu">
+			<span data-text="contextMenu"></span>
+		</label>
+
+		<label for="language" data-text="language"></label>
+		<select id="language">
+			<option value="auto" data-text="languageAuto"></option>
+			<option value="en">English</option>
+			<option value="fr">Français</option>
+		</select>
+
+		<button id="shortcuts" data-text="shortcuts" class="link"></button>
+	</section>
+
+	<script type="module" src="popup.js"></script>
+</body>
+</html>

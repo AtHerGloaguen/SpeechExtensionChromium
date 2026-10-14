@@ -1,0 +1,35 @@
+{
+  "extName": {
+    "message": "Speech"
+  },
+  "extDescription": {
+    "message": "Lit à voix haute la sélection ou la page entière, avec la voix et la vitesse de votre choix."
+  },
+  "cmdSpeakSelection": {
+    "message": "Lire la sélection"
+  },
+  "cmdSpeakPage": {
+    "message": "Lire la page"
+  },
+  "cmdPauseResume": {
+    "message": "Lecture / Pause"
+  },
+  "cmdStop": {
+    "message": "Arrêter la lecture"
+  },
+  "cmdFaster": {
+    "message": "Lire plus vite"
+  },
+  "cmdSlower": {
+    "message": "Lire plus lentement"
+  },
+  "cmdSpeakFromSelection": {
+    "message": "Lire à partir de la sélection"
+  },
+  "cmdPrevious": {
+    "message": "Phrase précédente"
+  },
+  "cmdNext": {
+    "message": "Phrase suivante"
+  }
+}

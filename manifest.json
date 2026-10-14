@@ -1,0 +1,80 @@
+{
+  "manifest_version": 3,
+  "name": "__MSG_extName__",
+  "description": "__MSG_extDescription__",
+  "version": "1.0.0",
+  "default_locale": "en",
+  "minimum_chrome_version": "116",
+  "permissions": [
+    "tts",
+    "contextMenus",
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "__MSG_extName__",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "options_ui": {
+    "page": "popup.html",
+    "open_in_tab": false
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "commands": {
+    "speak-selection": {
+      "suggested_key": {
+        "default": "Alt+Shift+S"
+      },
+      "description": "__MSG_cmdSpeakSelection__"
+    },
+    "speak-from-selection": {
+      "description": "__MSG_cmdSpeakFromSelection__"
+    },
+    "speak-page": {
+      "suggested_key": {
+        "default": "Alt+Shift+D"
+      },
+      "description": "__MSG_cmdSpeakPage__"
+    },
+    "pause-resume": {
+      "suggested_key": {
+        "default": "Alt+Shift+P"
+      },
+      "description": "__MSG_cmdPauseResume__"
+    },
+    "stop": {
+      "suggested_key": {
+        "default": "Alt+Shift+X"
+      },
+      "description": "__MSG_cmdStop__"
+    },
+    "previous": {
+      "description": "__MSG_cmdPrevious__"
+    },
+    "next": {
+      "description": "__MSG_cmdNext__"
+    },
+    "faster": {
+      "description": "__MSG_cmdFaster__"
+    },
+    "slower": {
+      "description": "__MSG_cmdSlower__"
+    }
+  }
+}

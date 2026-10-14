@@ -1,0 +1,35 @@
+{
+  "extName": {
+    "message": "Speech"
+  },
+  "extDescription": {
+    "message": "Reads the selection or the whole page aloud, with the voice and speed of your choice."
+  },
+  "cmdSpeakSelection": {
+    "message": "Speak selection"
+  },
+  "cmdSpeakPage": {
+    "message": "Speak page"
+  },
+  "cmdPauseResume": {
+    "message": "Play / Pause"
+  },
+  "cmdStop": {
+    "message": "Stop speech"
+  },
+  "cmdFaster": {
+    "message": "Speak faster"
+  },
+  "cmdSlower": {
+    "message": "Speak slower"
+  },
+  "cmdSpeakFromSelection": {
+    "message": "Speak from the selection"
+  },
+  "cmdPrevious": {
+    "message": "Previous sentence"
+  },
+  "cmdNext": {
+    "message": "Next sentence"
+  }
+}
