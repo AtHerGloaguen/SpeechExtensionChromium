@@ -83,3 +83,7 @@ L'extension n'a accès à une page qu'au moment où vous lancez une lecture (per
 | `popup.html/.js/.css` | Fenêtre de l'icône : boutons et paramètres |
 | `settings.js` | Paramètres enregistrés et vitesse |
 | `texts.js`, `_locales/` | Textes français / anglais |
+
+## Licence
+
+GPL v2 ou ultérieure, voir [LICENSE](LICENSE).
